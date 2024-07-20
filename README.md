@@ -1,15 +1,16 @@
 # embed
 A stable, blazing fast and easy-to-use inference library with a focus on a sync-to-async API
 
-# Installation
+## Installation
 ```bash
 pip install embed
 ```
-# What is embed?
+## Why embed?
 
 Embed makes it easy to load any embedding, classification and reranking models from Huggingface. 
 It heavily relies on [Infinity](https://github.com/michaelfeil/infinity) as backend for async computation, batching, and Flash-Attention-2.
-It is fully unit tested, and has 100% code coverage for common models.
+
+![CPU Benchmark Diagram](docs/l4_cpu.png)
 
 ```python
 from embed import BatchedInference
@@ -25,7 +26,9 @@ register = BatchedInference(model_id=[
   # rerankers
   "mixedbread-ai/mxbai-rerank-xsmall-v1"
 ],
+# engine to `torch` or `optimum`
 engine="torch",
+# device `cuda` (Nvidia/AMD) or `cpu`
 device="cpu"
 )
 
