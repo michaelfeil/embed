@@ -58,3 +58,6 @@ All functions return `Futures(vector_embedding, token_usage)`, enables you to `w
 >>> embedding_fut.result()
 ([array([-3.35943862e-03, ..., -3.22808176e-02], dtype=float32)], 19)
 ```
+
+# Licence and Contributions
+embed is licensed as MIT. All contribrutions need to adhere to the MIT License. Contributions are welcome.
