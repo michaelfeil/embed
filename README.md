@@ -5,12 +5,14 @@ A stable, blazing fast and easy-to-use inference library with a focus on a sync-
 ```bash
 pip install embed
 ```
+
 ## Why embed?
 
 Embed makes it easy to load any embedding, classification and reranking models from Huggingface. 
-It heavily relies on [Infinity](https://github.com/michaelfeil/infinity) as backend for async computation, batching, and Flash-Attention-2.
+It leverages [Infinity](https://github.com/michaelfeil/infinity) as backend for async computation, batching, and Flash-Attention-2.
 
 ![CPU Benchmark Diagram](docs/l4_cpu.png)
+Benchmarking on an Nvidia-L4 instance. Note: CPU uses bert-small, CUDA uses Bert-large. [Methodology](https://michaelfeil.eu/infinity/0.0.51/benchmarking/).
 
 ```python
 from embed import BatchedInference
@@ -41,7 +43,7 @@ register.rerank(query=question, docs=sentences, model_id="mixedbread-ai/mxbai-re
 register.classify(model_id="philschmid/tiny-bert-sst2-distilled", sentences=sentences)
 register.image_embed(model_id="wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M", images=images)
 
-# Always manually stop the register upon termination.
+# Always manually stop the register upon termination to free model memory.
 register.stop()
 ```
 
