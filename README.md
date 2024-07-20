@@ -25,7 +25,8 @@ register = BatchedInference(model_id=[
   # rerankers
   "mixedbread-ai/mxbai-rerank-xsmall-v1"
 ],
-engine="torch"
+engine="torch",
+device="cpu"
 )
 
 sentences = ["Paris is in France.", "Berlin is in Germany.", "I love SF"]
