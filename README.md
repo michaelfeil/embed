@@ -1,6 +1,9 @@
 # embed
 A stable, blazing fast and easy-to-use inference library with a focus on a sync-to-async API
 
+[![ci][ci-shield]][ci-url]
+[![Downloads][pepa-shield]][pepa-url]
+
 ## Installation
 ```bash
 pip install embed
@@ -61,3 +64,21 @@ All functions return `Futures(vector_embedding, token_usage)`, enables you to `w
 
 # Licence and Contributions
 embed is licensed as MIT. All contribrutions need to adhere to the MIT License. Contributions are welcome.
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/michaelfeil/embed.svg?style=for-the-badge
+[contributors-url]: https://github.com/michaelfeil/embed/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/michaelfeil/embed.svg?style=for-the-badge
+[forks-url]: https://github.com/michaelfeil/embed/network/members
+[stars-shield]: https://img.shields.io/github/stars/michaelfeil/embed.svg?style=for-the-badge
+[stars-url]: https://github.com/michaelfeil/embed/stargazers
+[issues-shield]: https://img.shields.io/github/issues/michaelfeil/embed.svg?style=for-the-badge
+[issues-url]: https://github.com/michaelfeil/embed/issues
+[license-shield]: https://img.shields.io/github/license/michaelfeil/embed.svg?style=for-the-badge
+[license-url]: https://github.com/michaelfeil/embed/blob/master/LICENSE.txt
+[pepa-shield]: https://static.pepy.tech/badge/embed
+[pepa-url]: https://www.pepy.tech/projects/embed
+[ci-shield]: https://github.com/michaelfeil/infinity/actions/workflows/ci.yaml/badge.svg
+[ci-url]: https://github.com/michaelfeil/infinity/actions
