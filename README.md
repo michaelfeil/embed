@@ -25,7 +25,7 @@ register = BatchedInference(model_id=[
   # sentence-embeddings
   "michaelfeil/bge-small-en-v1.5",
   # sentence-embeddings and image-embeddings
-  "wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M",
+  "jinaai/jina-clip-v1",
   # classification models
   "philschmid/tiny-bert-sst2-distilled",
   # rerankers
@@ -44,7 +44,7 @@ question = "Where is Paris?"
 register.embed(sentences=sentences, model_id="michaelfeil/bge-small-en-v1.5")
 register.rerank(query=question, docs=sentences, model_id="mixedbread-ai/mxbai-rerank-xsmall-v1")
 register.classify(model_id="philschmid/tiny-bert-sst2-distilled", sentences=sentences)
-register.image_embed(model_id="wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M", images=images)
+register.image_embed(model_id="jinaai/jina-clip-v1", images=images)
 
 # Always manually stop the register upon termination to free model memory.
 register.stop()
