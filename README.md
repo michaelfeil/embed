@@ -25,7 +25,7 @@ from concurrent.futures import Future
 register = BatchedInference(
     model_id=[
         # sentence-embeddings
-        "BAAI/bge-small-en-v1.5",
+        "michaelfeil/bge-small-en-v1.5",
         # sentence-embeddings and image-embeddings
         "jinaai/jina-clip-v1",
         # classification models
