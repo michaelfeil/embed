@@ -1,0 +1,3 @@
+[submodule "embed_package/infinity"]
+	path = embed_package/infinity
+	url = https://github.com/michaelfeil/infinity
