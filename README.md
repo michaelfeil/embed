@@ -11,6 +11,8 @@ pip install embed
 
 ## Why embed?
 
+Note: Embed has a new url & moved to https://github.com/michaelfeil/infinity/tree/main/libs/embed_package.
+
 Embed makes it easy to load any embedding, classification and reranking models from Huggingface. 
 It leverages [Infinity](https://github.com/michaelfeil/infinity) as backend for async computation, batching, and Flash-Attention-2.
 
